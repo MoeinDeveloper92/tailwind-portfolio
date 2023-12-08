@@ -4,6 +4,8 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
+
+
     const links = [
         {
             id: 1,

@@ -1,9 +1,12 @@
 import React from 'react'
-import { Navbar } from "./components/inject"
+import { Navbar, Home, SolialLinks, About } from "./components/inject"
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Home />
+      <SolialLinks />
+      <About />
     </div>
   )
 }
