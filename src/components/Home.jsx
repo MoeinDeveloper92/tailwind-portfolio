@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroImage from "../assets/Moein.jpg"
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
-
+import { Link } from 'react-scroll'
 const Home = () => {
     return (
         <div name="home" className='py-[150px] h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 '>
@@ -17,12 +17,12 @@ const Home = () => {
                     </p>
 
                     <div>
-                        <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-100 to-blue-500 cursor-pointer anim'>
+                        <Link to='portfolio' smooth duration={599} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-100 to-blue-500 cursor-pointer anim'>
                             Portfolio
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdOutlineKeyboardArrowRight size={25} className='ml-2' />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
