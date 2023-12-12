@@ -6,12 +6,11 @@ const App = () => {
     <div>
       <Navbar />
       <Home />
-      <SolialLinks />
-      {/* <About />
+      <About />
       <Portfolio />
       <Experience />
       <Contact />
-      <SolialLinks /> */}
+      <SolialLinks />
     </div>
   )
 }

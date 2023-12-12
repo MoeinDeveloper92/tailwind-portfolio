@@ -44,6 +44,7 @@ const SolialLinks = () => {
                             target='__blank'
                             className='flex w-full justify-between items-center px-2'
                             download={download}
+                            rel='noreferrer'
                         >
                             {child}
                         </a>
