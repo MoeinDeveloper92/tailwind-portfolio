@@ -1,6 +1,8 @@
 import React from 'react'
 import hero from "../assets/hero.jpg"
 import { MdOutlineKeyboardArrowRight } from "react-icons/md"
+import { Link } from "react-scroll"
+
 
 const Home = () => {
     return (
@@ -17,12 +19,12 @@ const Home = () => {
                         I am dedicated to delivering scalable and maintainable code, staying up-to-date with the latest industry trends, and continuously expanding my skill set.
                     </p>
                     <div>
-                        <button className='group text-white w-fit px-5 py-2 my-3 flex  items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                        <Link to='portfolio' smooth duration={500} className='group text-white w-fit px-5 py-2 my-3 flex  items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                             Portfolio
                             <span className='group-hover:rotate-90 duration-150'>
                                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
