@@ -1,15 +1,17 @@
 import React from 'react'
 import { Navbar, Home, SolialLinks, About, Portfolio, Experience, Contact } from "./components/inject"
+
 const App = () => {
   return (
     <div>
       <Navbar />
       <Home />
-      <About />
+      <SolialLinks />
+      {/* <About />
       <Portfolio />
       <Experience />
       <Contact />
-      <SolialLinks />
+      <SolialLinks /> */}
     </div>
   )
 }

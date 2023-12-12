@@ -4,76 +4,53 @@ import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 
 
-const SolialLinks = () => {
 
+const SolialLinks = () => {
     const links = [
         {
             id: 1,
-            child: (
-                <>
-                    Linkedin
-                    <FaLinkedin size={30} />
-                </>
-            ),
+            child: (<>Linkedin <FaLinkedin size={30} /></>),
             href: 'https://linkedin.com',
             style: 'rounded-tr-md'
         },
         {
             id: 2,
-            child: (
-                <>
-                    Github
-                    <FaGithub size={30} />
-                </>
-            ),
-            href: 'https://github.com/moeinDeveloper92',
-            style: 'rounded-tr-md'
+            child: (<>Github <FaGithub size={30} /></>),
+            href: 'https://github.com/moeinDeveloper92'
         },
         {
             id: 3,
-            child: (
-                <>
-                    Email
-                    <HiOutlineMail size={30} />
-                </>
-            ),
-            href: 'mailto:moeinsamani1992@gmail.com',
-            style: 'rounded-tr-md'
+            child: (<>Email <HiOutlineMail size={30} /></>),
+            // It opens uo user's email
+            href: 'mailto:moeinsamani1992@gmail.com'
         },
         {
             id: 4,
-            child: (
-                <>
-                    Resume
-                    <BsFillPersonLinesFill size={30} />
-                </>
-            ),
-            href: '/resume.pdf',
+            child: (<>Resume <BsFillPersonLinesFill size={30} /></>),
+            href: '/Fullstack-CV-Moein.pdf',
             style: 'rounded-br-md',
             download: true
         }
     ]
+
+
     return (
-        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed '>
-            <ul className=''>
+        <div className='xl:flex flex-col top-[35%] left-0 fixed hidden '>
+            <ul>
                 {links.map(({ id, child, href, style, download }) => (
-                    <li className='flex justify-between items-center w-40 h-14 px-4  ml-[-100px] bg-gray-500 hover:rounded-md duration-200 hover:ml-[-10px]'>
+                    <li className={`flex justify-between items-center h-14 w-40 bg-gray-500 text-white ml-[-110px] hover:rounded-md hover:ml-[-5px] duration-200 ${style}`}>
                         <a
-                            rel='noreferer'
-                            download={download}
-                            key={id}
                             href={href}
                             target='__blank'
-                            className={`flex justify-between items-center w-full text-white ${style}`}>
-                            <>
-                                {child}
-                            </>
+                            className='flex w-full justify-between items-center px-2'
+                            download={download}
+                        >
+                            {child}
                         </a>
                     </li>
                 ))}
-
             </ul>
-        </div>
+        </div >
     )
 }
 
